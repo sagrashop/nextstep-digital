@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:url_launcher/url_launcher.dart';
 
 // ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
@@ -51,6 +52,21 @@ class NextStepApp extends StatelessWidget {
         '/metodo': (context) => const MetodoPage(),
         '/preventivo': (context) => const PreventivoPage(),
         '/contatti': (context) => const ContattiPage(),
+      },
+      builder: (context, child) {
+        return Scaffold(
+          body: child,
+          floatingActionButton: FloatingActionButton(
+            onPressed: () async {
+              final Uri whatsappUrl = Uri.parse(
+                "https://wa.me/393287095115?text=Salve,%20vorrei%20maggiori%20informazioni.",
+              );
+              await launchUrl(whatsappUrl);
+            },
+            backgroundColor: const Color(0xFF25D366),
+            child: const Icon(Icons.chat, color: Colors.white, size: 30),
+          ),
+        );
       },
     );
   }
@@ -856,7 +872,7 @@ class _HomeScreenState extends State {
                               ),
                               const SizedBox(height: 20),
                               DropdownButtonFormField(
-                                value: _formService,
+                                initialValue: _formService,
                                 dropdownColor: const Color(0xFF101c44),
                                 style: const TextStyle(color: Colors.white),
                                 decoration: _inputDecoration(
