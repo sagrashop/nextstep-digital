@@ -9,7 +9,7 @@
 
     <!-- 2. Servizi offerti -->
     <url>
-        <loc>https://nextstepdigital.shop/#/servizi</loc>
+        <loc>https://nextstepdigital.shop/servizi</loc>
         <priority>0.8</priority>
     </url>
 
@@ -29,5 +29,5 @@
     <url>
         <loc>https://nextstepdigital.shop/#/contatti</loc>
         <priority>0.6</priority>
-
+    </url>
 </urlset>
