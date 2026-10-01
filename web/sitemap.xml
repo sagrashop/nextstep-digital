@@ -3,31 +3,31 @@
 
     <!-- 1. Home Page (Priorità Massima) -->
     <url>
-        <loc>https://www.iltuosito.it/</loc>
+        <loc>https://nextstepdigital.shop/</loc>
         <priority>1.0</priority>
     </url>
 
     <!-- 2. Servizi offerti -->
     <url>
-        <loc>https://www.iltuosito.it/#/servizi</loc>
+        <loc>https://nextstepdigital.shop/#/servizi</loc>
         <priority>0.8</priority>
     </url>
 
     <!-- 3. Il nostro Metodo -->
     <url>
-        <loc>https://www.iltuosito.it/#/metodo</loc>
+        <loc>https://nextstepdigital.shop/#/metodo</loc>
         <priority>0.7</priority>
     </url>
 
     <!-- 3. Preventivi su misura -->
     <url>
-        <loc>https://www.iltuosito.it/#/preventivo</loc>
+        <loc>https://nextstepdigital.shop/#/preventivo</loc>
         <priority>0.6</priority>
     </url>
 
     <!-- 3. I nostri Contatti -->
     <url>
-        <loc>https://www.iltuosito.it/#/contatti</loc>
+        <loc>https://nextstepdigital.shop/#/contatti</loc>
         <priority>0.6</priority>
 
 </urlset>
