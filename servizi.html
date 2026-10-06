@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Nostri Servizi | NextStep Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Scopri i servizi di NextStep Digital: sviluppo web custom, app mobile in Flutter, e-commerce avanzati e ottimizzazione SEO a Catania e in tutta Italia.">
+    <meta name="keywords" content="sviluppo app personalizzate, siti web su misura, agenzia web, e-commerce, NextStep Digital, nextstepdigital.shop, sito web a catania, sviluppo app a catania, agenzia digitale, soluzioni digitali, sviluppo software, consulenza digitale">
+    <meta name="author" content="NextStep Digital">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nextstepdigital.shop/">
+    <meta property="og:title" content="NextStep Digital | App e Siti Web su Misura">
+    <meta property="og:description" content="Trasformiamo le tue idee in app e siti web di successo. Soluzioni digitali performanti e su misura.">
+    <meta property="og:image" content="https://nextstepdigital.shop/assets/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="it_IT">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+body {
+font-family: 'Plus Jakarta Sans', sans-serif;
+background-color: #0a0d14;
+color: #f8fafc;
+overflow-x: hidden;
+}
+.hero-glow {
+background-image:
+radial-gradient(circle at 15% 20%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
+radial-gradient(circle at 85% 70%, rgba(6, 182, 212, 0.08) 0%, transparent 40%);
+}
+.glass-nav {
+background: rgba(10, 13, 20, 0.85);
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px);
+}
+    </style>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("5ACYXSRNdZQyYZJAO") // con la tua chiave pubblica di EmailJS
+        })();
+    </script>
+</head>
+<body class="bg-[#0a0d14] text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    
+    <header class="glass-nav fixed top-0 left-0 w-full z-50 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-extrabold tracking-tight flex items-center gap-1">
+                NextStep<span class="text-indigo-500">.</span>Digital
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <a href="servizi.html" class="text-white font-semibold transition-colors">Servizi</a>
+                <a href="chi-siamo.html" class="hover:text-white transition-colors">Chi Siamo</a>
+                <a href="#preventivo" class="hover:text-white transition-colors">Preventivo</a>
+                <a href="index.html#contatti" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl font-semibold shadow-lg shadow-indigo-500/25 transition-all transform hover:-translate-y-0.5">Contattaci</a>
+            </nav>
+
+            
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-[#121824] border-b border-slate-800 px-6 py-5 flex flex-col gap-4">
+            <a href="index.html" class="mobile-link text-slate-300 hover:text-white text-lg font-medium">Home</a>
+            <a href="servizi.html" class="mobile-link text-white text-lg font-semibold">Servizi</a>
+            <a href="chi-siamo.html" class="mobile-link text-slate-300 hover:text-white text-lg font-medium">Chi Siamo</a>
+            <a href="#preventivo" class="hover:text-white transition-colors">Preventivo</a>
+            <a href="index.html#contatti" class="mobile-link bg-indigo-600 text-white text-center py-3 rounded-xl font-semibold">Contattaci</a>
+        </div>
+    </header>
+
+    
+    <section class="hero-glow pt-36 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-sm font-semibold">
+                <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+                Soluzioni Digitali Avanzate
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">
+                Servizi su misura per far <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">crescere il tuo business</span>
+            </h1>
+            
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                Dallo sviluppo di applicazioni mobile multipiattaforma alla realizzazione di siti web e e-commerce performanti. Trasformiamo le tue idee in asset digitali concreti.
+            </p>
+        </div>
+    </section>
+
+    
+    <section class="pb-24 px-6">
+        <div class="max-w-5xl mx-auto space-y-16">
+            
+            
+            <div class="bg-[#121824] p-8 sm:p-12 rounded-2xl border border-slate-800 shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <span class="text-indigo-400 font-mono text-sm">// 01. Web Development</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white">Siti Web e Web App su Misura</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Rifiutiamo i template preconfezionati. Progettiamo e sviluppiamo interfacce web uniche, veloci e ottimizzate per convertire i visitatori in clienti fidelizzati.
+                    </p>
+                    <p class="text-slate-400 text-sm">
+                        Utilizziamo tecnologie moderne per garantire un'esperienza utente fluida su qualsiasi dispositivo, con punteggi PageSpeed eccellenti.
+                    </p>
+                </div>
+                <div class="bg-[#0a0d14] p-6 rounded-xl border border-slate-800/80 font-mono text-sm text-slate-300 space-y-3">
+                    <div class="text-indigo-400">// Stack & Vantaggi</div>
+                    <div><span class="text-cyan-400">•</span> Design 100% Personalizzato</div>
+                    <div><span class="text-cyan-400">•</span> Ottimizzazione SEO Nativa</div>
+                    <div><span class="text-cyan-400">•</span> Performance e Velocità Record</div>
+                    <div><span class="text-cyan-400">•</span> Pannello di Gestione Intuitivo</div>
+                </div>
+            </div>
+
+            
+            <div class="bg-[#121824] p-8 sm:p-12 rounded-2xl border border-slate-800 shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4 order-2 md:order-1">
+                    <div class="bg-[#0a0d14] p-6 rounded-xl border border-slate-800/80 font-mono text-sm text-slate-300 space-y-3">
+                        <div class="text-indigo-400">// Mobile Architecture</div>
+                        <div><span class="text-cyan-400">•</span> Sviluppo Multipiattaforma (iOS & Android)</div>
+                        <div><span class="text-cyan-400">•</span> Framework Flutter Avanzato</div>
+                        <div><span class="text-cyan-400">•</span> Integrazione API & Database Cloud</div>
+                        <div><span class="text-cyan-400">•</span> Pubblicazione su App Store & Google Play</div>
+                    </div>
+                </div>
+                <div class="space-y-4 order-1 md:order-2">
+                    <span class="text-indigo-400 font-mono text-sm">// 02. Mobile Apps</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white">Applicazioni Mobile Native e Ibride</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Realizziamo app per smartphone potenti e scalabili utilizzando Flutter. Soluzioni pensate per offrire un'esperienza nativa impeccabile sia su iOS che su Android, riducendo tempi e costi di sviluppo.
+                    </p>
+                    <p class="text-slate-400 text-sm">
+                        Dalle app di prenotazione ai gestionali complessi, portiamo la tua attività direttamente nelle tasche dei tuoi clienti.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-[#121824] p-8 sm:p-12 rounded-2xl border border-slate-800 shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <span class="text-indigo-400 font-mono text-sm">// 03. E-Commerce & Growth</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white">Piattaforme E-commerce ad Alto ROI</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Costruiamo negozi online robusti e strutturati per massimizzare le vendite. Ottimizziamo il flusso di cassa, l'esperienza di checkout e l'indicizzazione dei prodotti sui motori di ricerca.
+                    </p>
+                    <p class="text-slate-400 text-sm">
+                        Integrazioni con sistemi di pagamento sicuri, logistica avanzata e automazioni di marketing orientate alla conversione.
+                    </p>
+                </div>
+                <div class="bg-[#0a0d14] p-6 rounded-xl border border-slate-800/80 font-mono text-sm text-slate-300 space-y-3"]
+                    <div class="text-indigo-400">// E-commerce Features</div>
+                    <div><span class="text-cyan-400">•</span> Shopify & Custom Stores</div>
+                    <div><span class="text-cyan-400">•</span> Gestione Catalogo & Varianti</div>
+                    <div><span class="text-cyan-400">•</span> Strategie di Conversione (CRO)</div>
+                    <div><span class="text-cyan-400">•</span> Consulenza SEO & Vendite Online</div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-[#121824] p-6 rounded-xl border border-slate-800">
+                <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold text-lg mb-4">⚡</div>
+                <h3 class="text-lg font-bold text-white mb-2">Velocità & SEO</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Ottimizziamo ogni riga di codice per ottenere punteggi PageSpeed elevati e posizionare i tuoi progetti in cima ai motori di ricerca.</p>
+            </div>
+            <div class="bg-[#121824] p-6 rounded-xl border border-slate-800">
+                <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-lg mb-4">🛠️</div>
+                <h3 class="text-lg font-bold text-white mb-2">Soluzioni su Misura</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Sviluppiamo web app, gestionali e piattaforme e-commerce pensate esattamente sulle reali esigenze operative del tuo business.</p>
+            </div>
+            <div class="bg-[#121824] p-6 rounded-xl border border-slate-800">
+                <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold text-lg mb-4">🤝</div>
+                <h3 class="text-lg font-bold text-white mb-2">Partner Affidabile</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Ti affianchiamo passo dopo passo nella crescita online, offrendo assistenza tecnica costante e orientata al ROI.</p>
+            </div>
+        </div>
+
+        
+        <div class="text-center bg-gradient-to-r from-indigo-900/30 to-cyan-900/30 border border-indigo-500/30 rounded-2xl p-8 sm:p-12 space-y-6">
+            <h2 class="text-3xl font-extrabold text-white">Hai un progetto da realizzare?</h2>
+            <p class="text-slate-300 max-w-xl mx-auto">Parla con noi delle tue esigenze: trasformeremo la tua visione in una soluzione digitale concreta ed efficiente.</p>
+            <a href="index.html#contatti" class="inline-block bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-indigo-500/25 transition-all transform hover:-translate-y-0.5">Contattaci Subito</a>
+        </div>
+
+    </div>
+</section>
+<!-- Calcolatore Preventivo Section -->
+    <section id="preventivo" class="py-24 px-6 bg-[#0a0d14]">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">Esempio di Calcolatore Preventivo</h2>
+                <p class="text-slate-400 text-lg">Seleziona le opzioni per avere una stima immediata del tuo prossimo progetto digitale.</p>
+            </div>
+
+            <div class="bg-[#121824] border border-slate-800 p-8 md:p-10 rounded-3xl shadow-2xl">
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-200 mb-2">Tipo di Progetto</label>
+                        <select id="calc-type" class="w-full bg-[#0a0d14] border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition-all">
+                            <option value="150">Sito Web Vetrina / Landing Page (€ 150)</option>
+                            <option value="300">E-commerce / Negozio Online (€ 300)</option>
+                            <option value="350">Applicazione Mobile Personalizzata (€ 350)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-200 mb-2">Complessità / Pagine</label>
+                        <select id="calc-pages" class="w-full bg-[#0a0d14] border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition-all">
+                            <option value="1">Standard (1-5 sezioni/pagine)</option>
+                            <option value="1.5">Avanzato (6-15 pagine o funzioni extra)</option>
+                            <option value="2.2">Enterprise (Piattaforma complessa)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-200 mb-2">Design & UI/UX</label>
+                        <select id="calc-design" class="w-full bg-[#0a0d14] border border-slate-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-indigo-500 transition-all">
+                            <option value="1">Moderno Standard</option>
+                            <option value="1.3">Esclusivo con Animazioni Custom (1.3x)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <span class="text-sm text-slate-400 block">Stima Orientativa del Progetto:</span>
+                        <span class="text-xs text-slate-500">* Prezzo IVA esclusa, calcolato in tempo reale</span>
+                    </div>
+                    <div id="total-price" class="text-3xl md:text-4xl font-extrabold text-indigo-400">€ 1.200</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<footer class="bg-[#0a0d14] border-t border-slate-800 py-12 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div>
+            <a href="index.html" class="text-xl font-extrabold tracking-tight">NextStep<span class="text-indigo-500">.</span>Digital</a>
+            <p class="text-sm text-slate-500 mt-1">nextstepdigital.shop • Tutti i diritti riservati</p>
+        </div>
+        <div class="text-sm text-slate-400">
+            Sviluppo App, Siti Web & Soluzioni Digitali Avanzate.
+        </div>
+    </div>
+</footer>
+<!-- JavaScript Interattivo -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // 2. Calcolatore Preventivo Dinamico
+            const calcType = document.getElementById('calc-type');
+            const calcPages = document.getElementById('calc-pages');
+            const calcDesign = document.getElementById('calc-design');
+            const totalPriceEl = document.getElementById('total-price');
+
+            function calculateEstimate() {
+                if (!calcType || !calcPages || !calcDesign || !totalPriceEl) return;
+
+                const basePrice = parseInt(calcType.value) || 0;
+                const pagesMultiplier = parseFloat(calcPages.value) || 1;
+                const designMultiplier = parseFloat(calcDesign.value) || 1;
+
+                const total = (basePrice * pagesMultiplier) * designMultiplier;
+                totalPriceEl.textContent = `€ ${Math.round(total).toLocaleString('it-IT')}`;
+            }
+
+            if (calcType && calcPages && calcDesign) {
+                calcType.addEventListener('change', calculateEstimate);
+                calcPages.addEventListener('change', calculateEstimate);
+                calcDesign.addEventListener('change', calculateEstimate);
+                calculateEstimate();
+            }
+
+            // 3. Gestione Modulo Contatto
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const submitButton = contactForm.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+
+                    submitButton.disabled = true;
+                    submitButton.textContent = 'Messaggio Inviato con Successo! 🎉';
+                    submitButton.classList.remove('bg-indigo-600', 'hover:bg-indigo-500');
+                    submitButton.classList.add('bg-emerald-600');
+
+                    setTimeout(() => {
+                        contactForm.reset();
+                        submitButton.disabled = false;
+                        submitButton.textContent = originalText;
+                        submitButton.classList.remove('bg-emerald-600');
+                        submitButton.classList.add('bg-indigo-600', 'hover:bg-indigo-500');
+                    }, 3500);
+                });
+            }
+        });
+    </script>
+
+
+<script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if(btn && menu) {
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    }
+</script>
+</body>
+</html>
