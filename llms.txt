@@ -1,0 +1,11 @@
+# NextStep Digital
+
+NextStep Digital è una digital agency specializzata nello sviluppo di applicazioni web e mobili su misura, ottimizzazione SEO e soluzioni digitali avanzate per le aziende.
+
+## Servizi Principali
+- Sviluppo Web e Mobile Full-Stack (Node.js, Express, MongoDB, Flutter, Python, JavaScript)
+- Ottimizzazione SEO e indicizzazione per motori di ricerca
+- Creazione di e-commerce e piattaforme digitali personalizzate
+
+## Informazioni di Contatto
+- Sito web ufficiale: [https://nextstepdigital.shop]
