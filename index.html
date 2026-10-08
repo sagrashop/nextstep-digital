@@ -329,7 +329,6 @@
         </svg>
     </a>
 
-    <!-- Banner Cookie -->
     <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-[#0a0d14]/95 backdrop-blur-xl border-t border-slate-800 shadow-2xl" style="display: none;">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="text-sm text-slate-300 text-center sm:text-left">
@@ -350,73 +349,9 @@
     <!-- JavaScript Globale e Controlli -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // 1. Mobile Menu Toggle
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const mobileLinks = document.querySelectorAll('.mobile-link');
+            // ... (tutto il resto del tuo codice JS)
 
-            if (mobileMenuBtn && mobileMenu) {
-                mobileMenuBtn.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                });
-                mobileLinks.forEach(link => {
-                    link.addEventListener('click', () => {
-                        mobileMenu.classList.add('hidden');
-                    });
-                });
-            }
-
-            // 2. Calcolatore Preventivo Dinamico
-            const calcType = document.getElementById('calc-type');
-            const calcPages = document.getElementById('calc-pages');
-            const calcDesign = document.getElementById('calc-design');
-            const totalPriceEl = document.getElementById('total-price');
-
-            function calculateEstimate() {
-                if (!calcType || !calcPages || !calcDesign || !totalPriceEl) return;
-
-                const basePrice = parseInt(calcType.value) || 0;
-                const pagesMultiplier = parseFloat(calcPages.value) || 1;
-                const designMultiplier = parseFloat(calcDesign.value) || 1;
-
-                const total = (basePrice * pagesMultiplier) * designMultiplier;
-                totalPriceEl.textContent = `€ ${Math.round(total).toLocaleString('it-IT')}`;
-            }
-
-            if (calcType && calcPages && calcDesign) {
-                calcType.addEventListener('change', calculateEstimate);
-                calcPages.addEventListener('change', calculateEstimate);
-                calcDesign.addEventListener('change', calculateEstimate);
-                calculateEstimate();
-            }
-
-            // 3. Gestione Modulo Contatto con EmailJS
-            const contactForm = document.getElementById('contact-form');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    
-                    const submitBtn = this.querySelector('button[type="submit"]');
-                    const originalText = submitBtn.innerHTML;
-                    submitBtn.textContent = 'Invio in corso...';
-                    submitBtn.disabled = true;
-
-                    emailjs.sendForm('service_myo9l6v', 'template_dxnzn4i', this)
-                        .then(function() {
-                            alert('Messaggio inviato con successo! Ti risponderemo presto.');
-                            contactForm.reset();
-                            submitBtn.innerHTML = originalText;
-                            submitBtn.disabled = false;
-                        }, function(error) {
-                            alert('Errore durante l\'invio. Riprova più tardi.');
-                            console.error('FAILED...', error);
-                            submitBtn.innerHTML = originalText;
-                            submitBtn.disabled = false;
-                        });
-                });
-            }
-
-            // 4. Gestione Banner Cookie
+            // Gestione Banner Cookie
             const banner = document.getElementById('cookie-banner');
             const acceptBtn = document.getElementById('cookie-accept');
             const rejectBtn = document.getElementById('cookie-reject');
