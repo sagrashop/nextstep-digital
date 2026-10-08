@@ -404,8 +404,7 @@
         });
     </script>
     <!-- Banner Cookie -->
-<!-- Banner Cookie -->
-<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-[#0a0d14]/95 backdrop-blur-xl border-t border-slate-800 shadow-2xl transition-transform duration-500 transform translate-y-full">
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-[#0a0d14]/95 backdrop-blur-xl border-t border-slate-800 shadow-2xl" style="display: none;">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="text-sm text-slate-300 text-center sm:text-left">
             Utilizziamo i cookie per offrirti la migliore esperienza sul nostro sito. Puoi consultare la nostra 
@@ -422,33 +421,26 @@
     </div>
 </div>
 
-<!-- Script corretto -->
+<!-- Script di controllo -->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const banner = document.getElementById('cookie-banner');
         const acceptBtn = document.getElementById('cookie-accept');
         const rejectBtn = document.getElementById('cookie-reject');
 
-        // Se l'utente non ha ancora scelto, mostra il banner
+        // Controlla se l'utente ha già fatto una scelta
         if (!localStorage.getItem('cookie_consent')) {
-            setTimeout(() => {
-                banner.classList.remove('translate-y-full');
-            }, 400);
-        }
-
-        // Funzione per nascondere il banner
-        function hideBanner() {
-            banner.classList.add('translate-y-full');
+            banner.style.display = 'block'; // Mostra il banner se non c'è consenso
         }
 
         acceptBtn.addEventListener('click', function() {
             localStorage.setItem('cookie_consent', 'accepted');
-            hideBanner();
+            banner.style.display = 'none';
         });
 
         rejectBtn.addEventListener('click', function() {
             localStorage.setItem('cookie_consent', 'rejected');
-            hideBanner();
+            banner.style.display = 'none';
         });
     });
 </script>
