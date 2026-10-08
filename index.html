@@ -329,50 +329,35 @@
         </svg>
     </a>
 
-    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[99999] p-4 bg-[#0a0d14]/95 backdrop-blur-xl border-t border-slate-800 shadow-2xl">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="text-sm text-slate-300 text-center sm:text-left">
-                Utilizziamo i cookie per offrirti la migliore esperienza sul nostro sito. Puoi consultare la nostra 
-                <a href="privacy.html" target="_blank" rel="noopener" class="text-indigo-400 font-semibold underline underline-offset-4 hover:text-indigo-300">Privacy Policy</a>.
-            </div>
-            <div class="flex items-center gap-3 shrink-0">
-                <button id="cookie-accept" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-6 py-2.5 rounded-xl shadow-lg transition-all duration-300 cursor-pointer">
-                    Accetta tutti
-                </button>
-                <button id="cookie-reject" class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm font-semibold px-6 py-2.5 rounded-xl transition-all duration-300 cursor-pointer">
-                    Rifiuta
-                </button>
-            </div>
+    <!-- Banner Cookie (Forzato) -->
+<div id="cookie-banner" style="position: fixed !important; bottom: 0 !important; left: 0 !important; right: 0 !important; z-index: 2147483647 !important; padding: 16px !important; background-color: #0a0d14 !important; border-top: 1px solid #334155 !important; display: block !important;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 16px;">
+        <div style="color: #cbd5e1; font-size: 14px; font-family: sans-serif;">
+            Utilizziamo i cookie per offrirti la migliore esperienza. Leggi la nostra 
+            <a href="privacy.html" target="_blank" style="color: #818cf8; text-decoration: underline;">Privacy Policy</a>.
+        </div>
+        <div style="display: flex; gap: 10px; flex-shrink: 0;">
+            <button id="cookie-accept" style="background-color: #4f46e5; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer;">Accetta</button>
+            <button id="cookie-reject" style="background-color: #1e293b; color: #cbd5e1; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; cursor: pointer;">Rifiuta</button>
         </div>
     </div>
+</div>
 
-    <!-- JavaScript Cookie Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const banner = document.getElementById('cookie-banner');
-            const acceptBtn = document.getElementById('cookie-accept');
-            const rejectBtn = document.getElementById('cookie-reject');
-
-            // Se l'utente ha già fatto una scelta, nascondi il banner
-            const consent = localStorage.getItem('cookie_consent');
-            if (consent) {
-                banner.style.display = 'none';
-            }
-
-            if (acceptBtn) {
-                acceptBtn.addEventListener('click', () => {
-                    localStorage.setItem('cookie_consent', 'accepted');
-                    banner.style.display = 'none';
-                });
-            }
-
-            if (rejectBtn) {
-                rejectBtn.addEventListener('click', () => {
-                    localStorage.setItem('cookie_consent', 'rejected');
-                    banner.style.display = 'none';
-                });
-            }
-        });
-    </script>
+<script>
+    (function() {
+        const banner = document.getElementById('cookie-banner');
+        if (localStorage.getItem('cookie_consent')) {
+            banner.style.display = 'none';
+        }
+        document.getElementById('cookie-accept').onclick = function() {
+            localStorage.setItem('cookie_consent', 'accepted');
+            banner.style.display = 'none';
+        };
+        document.getElementById('cookie-reject').onclick = function() {
+            localStorage.setItem('cookie_consent', 'rejected');
+            banner.style.display = 'none';
+        };
+    })();
+</script>
 </body>
 </html>
