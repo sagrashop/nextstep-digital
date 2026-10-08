@@ -403,6 +403,52 @@
             }
         });
     </script>
+    <!-- Banner Cookie -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-[#0a0d14]/95 backdrop-blur-xl border-t border-slate-800 shadow-2xl transition-transform duration-500 transform translate-y-full">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-sm text-slate-300 text-center sm:text-left">
+            Utilizziamo i cookie per offrirti la migliore esperienza sul nostro sito. Puoi consultare la nostra 
+            <a href="privacy.html" target="_blank" rel="noopener" class="text-indigo-400 font-semibold underline underline-offset-4 hover:text-indigo-300">Privacy Policy</a>.
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+            <button id="cookie-accept" class="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold px-6 py-2.5 rounded-xl shadow-lg transition-all duration-300 cursor-pointer">
+                Accetta tutti
+            </button>
+            <button id="cookie-reject" class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm font-semibold px-6 py-2.5 rounded-xl transition-all duration-300 cursor-pointer">
+                Rifiuta
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Script per gestire la comparsa e i click -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const banner = document.getElementById('cookie-banner');
+        const acceptBtn = document.getElementById('cookie-accept');
+        const rejectBtn = document.getElementById('cookie-reject');
+
+        // Mostra il banner se l'utente non ha ancora fatto una scelta
+        if (!localStorage.getItem('cookie_consent')) {
+            setTimeout(() => {
+                banner.classList.remove('translate-y-full');
+            }, 500); // Piccolo ritardo per farlo comparire fluidamente all'apertura
+        }
+
+        // Azione al click su "Accetta"
+        acceptBtn.addEventListener('click', function() {
+            localStorage.setItem('cookie_consent', 'accepted');
+            banner.classList.add('translate-y-full');
+        });
+
+        // Azione al click su "Rifiuta"
+        rejectBtn.addEventListener('click', function() {
+            localStorage.setItem('cookie_consent', 'rejected');
+            banner.classList.add('translate-y-full'); // Correggibile anche con classList.add
+            banner.style.transform = 'translateY(100%)';
+        });
+    });
+</script>
 
 </body>
 </html>
