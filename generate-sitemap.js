@@ -1,7 +1,7 @@
 const fs = require('fs');
-const path = path = require('path');
+const path = require('path');
 
-const DOMAIN = 'https://nextstepdigital.shop'; // Il tuo dominio
+const DOMAIN = 'https://nextstepdigital.shop';
 const DIR = './';
 
 function getHtmlFiles(dir, fileList = []) {
@@ -9,7 +9,7 @@ function getHtmlFiles(dir, fileList = []) {
     files.forEach(file => {
         const filePath = path.join(dir, file);
         if (fs.statSync(filePath).isDirectory()) {
-            if (!['node_modules', '.git', 'images', 'css', '.github'].includes(file)) {
+            if (!['node_modules', '.git', 'images', 'css', '.github', 'assets', 'src'].includes(file)) {
                 getHtmlFiles(filePath, fileList);
             }
         } else if (file.endsWith('.html')) {
