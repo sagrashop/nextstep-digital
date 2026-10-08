@@ -1,0 +1,26 @@
+name: Aggiorna Sitemap Automatica
+
+on:
+  push:
+    branches: [ main, master ] # Si attiva quando fai il push su main o master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica il codice del repository
+        uses: actions/checkout@v4
+
+      - name: Configura Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Esegui lo script per generare la sitemap
+        run: node generate-sitemap.js
+
+      - name: Committa e spingi la sitemap aggiornata se ci sono modifiche
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Aggiornamento automatico sitemap.xml"
+          file_pattern: sitemap.xml
