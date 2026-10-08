@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Home Page -->
-    <url>
-        <loc>https://nextstepdigital.shop/</loc>
-        <lastmod>2026-10-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    
-    <!-- Pagina Servizi -->
-    <url>
-        <loc>https://nextstepdigital.shop/servizi</loc>
-        <lastmod>2026-10-07</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <!-- Pagina Chi Siamo -->
-    <url>
-        <loc>https://nextstepdigital.shop/chi-siamo</loc>
-        <lastmod>2026-10-07</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <url>
+    <loc>https://nextstepdigital.shop/chi-siamo.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextstepdigital.shop/come-creare-un-app-di-successo-2026.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextstepdigital.shop/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextstepdigital.shop/privacy.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://nextstepdigital.shop/servizi.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
