@@ -404,6 +404,7 @@
         });
     </script>
     <!-- Banner Cookie -->
+<!-- Banner Cookie -->
 <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-[#0a0d14]/95 backdrop-blur-xl border-t border-slate-800 shadow-2xl transition-transform duration-500 transform translate-y-full">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="text-sm text-slate-300 text-center sm:text-left">
@@ -421,31 +422,33 @@
     </div>
 </div>
 
-<!-- Script per gestire la comparsa e i click -->
+<!-- Script corretto -->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const banner = document.getElementById('cookie-banner');
         const acceptBtn = document.getElementById('cookie-accept');
         const rejectBtn = document.getElementById('cookie-reject');
 
-        // Mostra il banner se l'utente non ha ancora fatto una scelta
+        // Se l'utente non ha ancora scelto, mostra il banner
         if (!localStorage.getItem('cookie_consent')) {
             setTimeout(() => {
                 banner.classList.remove('translate-y-full');
-            }, 500); // Piccolo ritardo per farlo comparire fluidamente all'apertura
+            }, 400);
         }
 
-        // Azione al click su "Accetta"
+        // Funzione per nascondere il banner
+        function hideBanner() {
+            banner.classList.add('translate-y-full');
+        }
+
         acceptBtn.addEventListener('click', function() {
             localStorage.setItem('cookie_consent', 'accepted');
-            banner.classList.add('translate-y-full');
+            hideBanner();
         });
 
-        // Azione al click su "Rifiuta"
         rejectBtn.addEventListener('click', function() {
             localStorage.setItem('cookie_consent', 'rejected');
-            banner.classList.add('translate-y-full'); // Correggibile anche con classList.add
-            banner.style.transform = 'translateY(100%)';
+            hideBanner();
         });
     });
 </script>
