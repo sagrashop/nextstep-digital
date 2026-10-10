@@ -20,6 +20,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Preconnect e Font ottimizzati -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,6 +65,28 @@
             visibility: visible !important;
             opacity: 1 !important;
         }
+
+        .nsd-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 19px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .nsd-social-link:hover {
+    border-color: #00f2fe;
+    color: #00f2fe;
+    background-color: rgba(0, 242, 254, 0.12);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+  }
     </style>
 
 
@@ -392,7 +415,7 @@
                     <div style="font-size: 12px !important; color: #94a3b8 !important; margin-bottom: 8px !important;">12 Ottobre 2026 • 5 min lettura</div>
                     <h3 style="font-size: 20px !important; font-weight: bold !important; color: #ffffff !important; margin-bottom: 12px !important;">Come creare un'applicazione mobile di successo nel 2026</h3>
                     <p style="color: #94a3b8 !important; font-size: 14px !important; margin-bottom: 24px !important; flex-grow: 1 !important;">Scopri le tecnologie e le strategie chiave per progettare app performanti e scalabili.</p>
-                    <a href="articolo-1.html" style="display: block !important; width: 100% !important; background-color: #4f46e5 !important; color: #ffffff !important; text-align: center !important; padding: 12px 20px !important; border-radius: 10px !important; font-weight: 600 !important; font-size: 14px !important; text-decoration: none !important;">Leggi l'articolo</a>
+                    <a href="come-creare-un-app-di-successo-2026.html" style="display: block !important; width: 100% !important; background-color: #4f46e5 !important; color: #ffffff !important; text-align: center !important; padding: 12px 20px !important; border-radius: 10px !important; font-weight: 600 !important; font-size: 14px !important; text-decoration: none !important;">Leggi l'articolo</a>
                 </div>
             </article>
 
@@ -415,18 +438,19 @@
             <article class="blog-card" style="background-color: #0a0d14 !important; border: 1px solid rgba(30, 41, 59, 0.8) !important; border-radius: 16px !important; overflow: hidden !important; display: flex !important; flex-direction: column !important;">
                 <div style="height: 192px !important; position: relative !important; overflow: hidden !important;">
                     <div style="position: absolute !important; inset: 0 !important; background-color: rgba(30, 27, 75, 0.2) !important; z-index: 10 !important;"></div>
-                    <img src="images/tuo-articolo-3.jpg" alt="Performance Web" style="width: 100% !important; height: 100% !important; object-fit: cover !important;">
+                    <img src="images/3articolo.webp" alt="Performance Web" style="width: 100% !important; height: 100% !important; object-fit: cover !important;">
                     <span style="position: absolute !important; top: 16px !important; left: 16px !important; z-index: 20 !important; background-color: rgba(79, 70, 229, 0.9) !important; color: white !important; font-size: 12px !important; font-weight: 600 !important; padding: 4px 12px !important; border-radius: 9999px !important;">Siti Web</span>
                 </div>
                 <div style="padding: 24px !important; display: flex !important; flex-direction: column !important; flex-grow: 1 !important;">
                     <div style="font-size: 12px !important; color: #94a3b8 !important; margin-bottom: 8px !important;">1 Ottobre 2026 • 6 min lettura</div>
                     <h3 style="font-size: 20px !important; font-weight: bold !important; color: #ffffff !important; margin-bottom: 12px !important;">Perché la velocità di caricamento fa convertire di più</h3>
                     <p style="color: #94a3b8 !important; font-size: 14px !important; margin-bottom: 24px !important; flex-grow: 1 !important;">Analisi tecnica dell'impatto dei tempi di caricamento sulle vendite e conversioni.</p>
-                    <a href="articolo-3.html" style="display: block !important; width: 100% !important; background-color: #4f46e5 !important; color: #ffffff !important; text-align: center !important; padding: 12px 20px !important; border-radius: 10px !important; font-weight: 600 !important; font-size: 14px !important; text-decoration: none !important;">Leggi l'articolo</a>
+                    <a href="velocita-sito-web-conversioni.html" style="display: block !important; width: 100% !important; background-color: #4f46e5 !important; color: #ffffff !important; text-align: center !important; padding: 12px 20px !important; border-radius: 10px !important; font-weight: 600 !important; font-size: 14px !important; text-decoration: none !important;">Leggi l'articolo</a>
                 </div>
             </article>
 
         </div>
+          
                 <!-- Controlli Sotto (Visibili solo su mobile) -->
                 <div id="blog-carousel-mobile-controls">
                     <button onclick="scrollBlogCarousel(-1)" aria-label="Precedente">
@@ -495,6 +519,34 @@
                 <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
             </div>
         </div>
+
+        <div style="text-align: center; margin: 25px 0 15px 0;">
+  <p style="color: #a0aec0; font-size: 0.95rem; margin-bottom: 14px; font-weight: 500;">Seguici sui nostri canali:</p>
+  
+  <div style="display: flex; justify-content: center; align-items: center; gap: 14px; flex-wrap: wrap;">
+    
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@nextstepdigitalia?is_from_webapp=1&amp;sender_device=pc" class="nsd-social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/nextstepdigitalia" class="nsd-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/nextstepdigitalia/" class="nsd-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@Nextstepdigitalia" class="nsd-social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+      <i class="fab fa-youtube"></i>
+    </a>
+
+  </div>
+</div>
     </footer>
 
     <!-- Pulsante WhatsApp Fluttuante -->
